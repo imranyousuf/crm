@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
     title: {
        top: 20,
         left: 80,
-        fontSize: 24
+        fontSize: 24,
+        color: 'white'
     },
     image:{
        height: 100,
@@ -39,7 +40,7 @@ const PersonItem = (props) => {
         <View style={[theme.cardStyle, styles.card]}>
 
             <Image
-                source={{ uri: '/Users/imranyousuf/Desktop/crm/src/images/background.jpg'}}
+                source={{ uri: '/Users/imranyousuf/Desktop/crm/src/images/backgroundb.jpg'}}
                 style={[theme.cardImageStyle, styles.image]}/>
 
             <Icon
