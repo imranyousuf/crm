@@ -18,6 +18,10 @@ import Login from './Login';
 
 export default class App extends Component<Props> {
 
+  state = {
+    loggedIn: null
+  };
+
   componentWillMount(){
     firebase.initializeApp({
         apiKey: "AIzaSyCRz-U4ruGNXI3raUPrrja6T2hYvrQb2SA",
@@ -32,9 +36,6 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to Berkeley Masjid!
-        </Text>
         <Login />
       </View>
     );
@@ -48,9 +49,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  }
 });
